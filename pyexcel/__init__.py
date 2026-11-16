@@ -48,4 +48,11 @@ from .deprecated import (
     load_book_from_memory,
 )
 from .__version__ import __author__, __version__
+from .association import (
+    AssociationView,
+    AssociationViewError,
+    SourceSheet,
+    association_view,
+    get_association_view,
+)
 from .internal.garbagecollector import free_resources

@@ -2,6 +2,9 @@ name: pyexcel
 organisation: pyexcel
 releases:
 - changes:
+  - action: added
+    details:
+    - "add an editable many-to-one association view: read an existing book, keep independent copies of the two source tables and generate a native detail sheet. A change is written back to the source row its column came from, every detail row of the same customer is refreshed, and one assignment is rejected as a whole on conflicting values, an unknown customer reference or a changed order key"
   - action: Fixed
     details:
     - "`#310`: fix broken indentation in iget_records memory-reduction patch"

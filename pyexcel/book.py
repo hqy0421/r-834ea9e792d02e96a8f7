@@ -214,6 +214,16 @@ class Book(BookMeta):
             the_dict.update({sheet.name: sheet.array})
         return the_dict
 
+    def association_view(self, **keywords):
+        """Read this book and return an editable association view
+
+        See :func:`pyexcel.association.get_association_view` for the
+        parameters.
+        """
+        from pyexcel.association import get_association_view
+
+        return get_association_view(self, **keywords)
+
 
 def to_book(bookstream):
     """Convert a bookstream to Book"""

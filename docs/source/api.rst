@@ -100,6 +100,35 @@ Cookbook
    split_a_book
    extract_a_sheet_from_a_book
 
+
+Association view
+=================
+
+.. autosummary::
+   :toctree: generated/
+
+   association_view
+   get_association_view
+   AssociationView
+   SourceSheet
+   AssociationViewError
+
+The view is itself a :class:`Sheet`, so reading, formatting and saving
+work as usual.  It adds the following attributes and methods:
+
+.. autosummary::
+   :toctree: generated/
+
+   AssociationView.source_book
+   AssociationView.order_sheet
+   AssociationView.customer_sheet
+   AssociationView.detail
+   AssociationView.reference
+   AssociationView.order_key
+   AssociationView.provenance
+   AssociationView.to_book
+   AssociationView.transaction
+
    
 Book 
 =====
@@ -153,6 +182,14 @@ Save changes
    Book.save_to_memory
    Book.save_to_database
    Book.save_to_django_models
+
+Association view
+-----------------
+
+.. autosummary::
+   :toctree: generated/
+
+   Book.association_view
 
 Sheet
 =====
